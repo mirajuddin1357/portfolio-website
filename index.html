@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miraj Ud Din – AI & Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo with animated dot -->
+          <a href="#" class="logo">
+            <span class="logo-text">Miraj Ud Din</span>
+            <span class="logo-dot">.</span>
+          </a>
+
+          <!-- Navigation Links with Indicator -->
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">
+                  <i class="fas fa-home nav-icon"></i>
+                  <span class="link-text">Home</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">
+                  <i class="fas fa-user nav-icon"></i>
+                  <span class="link-text">About</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">
+                  <i class="fas fa-code nav-icon"></i>
+                  <span class="link-text">Skills</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">
+                  <i class="fas fa-project-diagram nav-icon"></i>
+                  <span class="link-text">Projects</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#certifications" class="nav-link">
+                  <i class="fas fa-certificate nav-icon"></i>
+                  <span class="link-text">Certifications</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                  <i class="fas fa-envelope nav-icon"></i>
+                  <span class="link-text">Contact</span>
+                  <span class="link-underline"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Side Controls -->
+          <div class="nav-controls">
+            <!-- Animated Theme Toggle -->
+            <div class="theme-toggle" id="themeToggle">
+              <div class="toggle-track">
+                <div class="toggle-thumb">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <a href="assets/resume.pdf" download class="btn-download-cv">
+              <i class="fas fa-download"></i>
+              <span>Download CV</span>
+            </a>
+
+            <!-- Animated Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Full Screen) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li>
+              <a href="#certifications" class="mobile-nav-link"
+                >Certifications</a
+              >
+            </li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+          <div class="mobile-theme-toggle">
+            <span>Dark Mode</span>
+            <div class="theme-toggle-sm">
+              <div class="toggle-track-sm">
+                <div class="toggle-thumb-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Progress Bar -->
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm Miraj Ud Din <span class="wave">👋</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            AI & Data Science Student | Future ML Engineer
+          </h2>
+          <p class="hero-text">
+            I'm currently pursuing a Bachelor's in Artificial Intelligence and
+            exploring the world of Machine Learning, Data Science, and
+            Programming.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="assets/resume.pdf" download class="btn btn-secondary"
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:mirajuddin1357@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="assets/profile.jpg" alt="Miraj Ud Din" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm an AI student from Peshawar with a strong passion for data
+              science, mathematics, and real-world problem-solving. I enjoy
+              working on data-driven projects, learning new tools like Python,
+              SQL, and ML libraries, and collaborating with teams or communities
+              online.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-user-graduate"></i>
+                <div>
+                  <h3>Education</h3>
+                  <p>
+                    B.S. in Artificial Intelligence (5th Semester)<br />University
+                    of Agriculture, Peshawar
+                  </p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Peshawar, Khyber Pakhtunkhwa, Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>MySQL</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Matplotlib</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Seaborn</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Machine Learning</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="75%"></div>
+            </div>
+            <span>75%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Deep Learning</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="70%"></div>
+            </div>
+            <span>70%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-table"></i>
+            </div>
+            <h3>Pandas</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>NumPy</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>VS Code</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Jupyter Notebook</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3>English Communication</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/images/data-cleaning.jpg"
+                alt="Data Cleaning Project"
+                style="object-fit: cover; width: 100%; height: 250px"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Data Cleaning in Python using Pandas</h3>
+              <p>
+                Cleaned, preprocessed, and visualized multiple datasets using
+                Jupyter Notebook.
+              </p>
+              <div class="project-tools">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+              </div>
+              <a href="#" class="btn btn-primary" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/images/student-performance.jpg"
+                alt="Student Performance Predictor"
+                style="object-fit: cover; width: 100%; height: 250px"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Student Performance Predictor</h3>
+              <p>
+                Built a simple machine learning model to predict student exam
+                scores using Linear Regression.
+              </p>
+              <div class="project-tools">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Matplotlib</span>
+              </div>
+              <a href="#" class="btn btn-primary" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="assets/images/weather-app.jpg"
+                alt="Weather Forecast App"
+                style="object-fit: cover; width: 100%; height: 250px"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Weather Forecast Web App</h3>
+              <p>Developed a basic app to display live weather using an API.</p>
+              <div class="project-tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>OpenWeather API</span>
+              </div>
+              <a href="#" class="btn btn-primary" target="_blank"
+                >Coming Soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">My Certifications</h2>
+        <div class="certifications-grid">
+          <div class="certification-card">
+            <div class="certification-img">
+              <img
+                src="assets/images/ai_azure.jpg"
+                alt="Azure AI Fundamentals"
+                style="object-fit: cover; width: 120%; height: 180px"
+              />
+            </div>
+            <div class="certification-content">
+              <h3>Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
+              <p>July 2025 | Score: 968/1000</p>
+              <a href="#" class="btn btn-primary" target="_blank"
+                >View Certificate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>mirajuddin1357@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Peshawar, Khyber Pakhtunkhwa, Pakistan</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <div>
+                <h4>University</h4>
+                <p>University of Agriculture, Peshawar</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#" class="logo">Miraj Ud Din<span>.</span></a>
+            <p>AI & Data Science Portfolio</p>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:mirajuddin1357@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Miraj Ud Din | Made with ❤️ using HTML, CSS & JS</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
