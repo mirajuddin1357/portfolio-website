@@ -23,7 +23,8 @@ export default function Contact() {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-      await emailjs.send(serviceId, templateId, form, { publicKey });
+      const templateParams: Record<string, unknown> = { name: form.name, email: form.email, message: form.message };
+      await emailjs.send(serviceId, templateId, templateParams, { publicKey });
       setStatus('sent');
       setForm({ name: '', email: '', message: '' });
     } catch (err) {
