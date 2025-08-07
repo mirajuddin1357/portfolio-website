@@ -1,0 +1,1 @@
+Place your Resume.pdf in this folder and update frontend profile.resumeUrl if needed.

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 antialiased;
+}
+
+.glass {
+  @apply bg-glass backdrop-blur-md shadow-glass rounded-xl border border-white/10;
+}
+
+.container-responsive {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.link-underline {
+  @apply underline decoration-primary-500 decoration-2 underline-offset-4 hover:text-primary-400 transition;
+}
