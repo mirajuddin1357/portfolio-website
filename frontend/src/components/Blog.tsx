@@ -3,7 +3,7 @@ import type { BlogPostMeta } from '../types';
 import { formatDate } from '@utils/seo';
 
 const markdownPosts = Object.entries(
-  import.meta.glob('../../content/blog/*.md', { eager: true, as: 'raw' })
+  import.meta.glob('../content/blog/*.md', { eager: true, as: 'raw' })
 );
 
 function parseFrontMatter(raw: string): { meta: BlogPostMeta; body: string } | null {
